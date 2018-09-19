@@ -3,6 +3,7 @@ App({
   onLaunch: function () {
   },
   globalData: {
+  // url: 'https://api.douban.com',
 	url: 'http://localhost/',
 	inTheatersUrl: '/v2/movie/in_theaters',
 	comingSoonUrl: '/v2/movie/coming_soon',

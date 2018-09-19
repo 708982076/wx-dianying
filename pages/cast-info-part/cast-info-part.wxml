@@ -1,0 +1,17 @@
+<!--pages/cast-info-part/cast-info-part.wxml-->
+<template name='cast-info-part'>
+	<view class='cast-info'>
+		<view class='info-text'>
+			<text class='info-name'>{{name}}</text>
+			<text class='info-bornPlace'>出生地： {{born_place}}</text>
+			<text class='info-birthday'>{{birthday}}</text>
+			<text class='info-professions'>{{professions}}</text>
+		</view>
+		<view class='info-rating-wrap'>
+			<view class='info-rating'>
+				<text class='rating-num'>12345粉丝</text>
+			</view>
+		</view>
+	</view>
+		
+</template>

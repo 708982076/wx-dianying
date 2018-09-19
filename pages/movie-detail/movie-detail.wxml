@@ -1,0 +1,23 @@
+<!--pages/movie-detail/movie-detail.wxml-->
+<import src="/pages/movie-detail-info/movie-detail-info.wxml"/>
+<view class='movie-wrap'>
+	<view class='movie-img-wrap'>
+		<image src="{{movieDesc.images.medium}}" class='movie-img'></image>
+	</view>
+	<view class='detail-wrap'>
+		<template is="movie-detail-info" data="{{...movieDesc}}"></template>
+		<view class='movie-intro'>
+			<text class='movie-head'>简介</text>
+			<view class='intro-text {{showIntro ? "onFold" : "offFold"}}'><text space="emsp">  {{movieDesc.summary}}</text></view>
+			<text class='intro-unfold' bindtap='openFold'>展示</text>
+		</view>
+		<view class='movie-cast'></view>
+			<text class='movie-head'>影人</text>
+			<scroll-view scroll-x class='cast-scroll'>
+				<view class='cast-item' wx:for="{{movieDesc.casts}}" wx:key="movieDesc.casts" bindtap='toCastDetail' data-cast-id="{{item.id}}">
+					<image src="{{item.avatars.medium}}" class='cast-img'></image>
+					<view class='cast-name'><text>{{item.name}}</text></view>
+				</view>
+			</scroll-view>
+		</view>
+</view>

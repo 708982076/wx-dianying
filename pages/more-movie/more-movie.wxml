@@ -1,0 +1,24 @@
+<!--pages/more-movie/more-movie.wxml-->
+<import src="/pages/movie-row-info/movie-row-info.wxml"/>
+<view class='header-tap'>
+    <view class="theaters-list {{showInTheaters ? 'showUnderline' : 'hideUnderline'}}" bind:tap="tabTitle" data-type-id="theaters">
+        影院热映
+    </view>
+    <view class="coming-list {{showComingSoon ? 'showUnderline' : 'hideUnderline'}}" bind:tap="tabTitle" data-type-id="comingsoon">
+        即将上映
+    </view>
+</view>
+<block wx:if="{{showInTheaters}}">
+	<scroll-view scroll-y class='scroll-wrap' bindscrolltolower="loadMore">
+		<view wx:for="{{theaters.movies}}" wx:key="{{theaters.movies}}">
+			<template is="movie-row-info" data="{{...item}}"></template>
+		</view>
+	</scroll-view>
+</block>
+<block wx:if="{{showComingSoon}}">
+	<scroll-view scroll-y class='scroll-wrap' bindscrolltolower="loadMore">
+		<view wx:for="{{comingsoon.movies}}" wx:key="{{comingsoon.movies}}">
+			<template is="movie-row-info" data="{{...item}}"></template>
+		</view>
+	</scroll-view>
+</block>

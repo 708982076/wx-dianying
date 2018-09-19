@@ -1,0 +1,7 @@
+<!--pages/rating-star/rating-star.wxml-->
+<template name="rating-star">
+	<view class='star-wrap'>
+		<view class='star rank{{average}}'></view>
+		<text class='rating'>{{average}}</text>
+	</view>
+</template>

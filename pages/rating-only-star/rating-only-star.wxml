@@ -1,0 +1,6 @@
+<!--pages/rating-only-star/rating-only-star.wxml-->
+<template name="rating-only-star">
+	<view class='star-wrap'>
+		<view class='star rank{{average}}'></view>
+	</view>
+</template>

@@ -1,0 +1,51 @@
+/* pages/rating-star/rating-star.wxss */
+.star-wrap{
+	display: flex;
+	align-items: center;
+}
+.star{
+	display: inline-block;
+	width: 100rpx;
+	height: 20rpx;
+	background-image: url(https://img3.doubanio.com/f/shire/0147ca9efddcac80050854590d26bee587b008df/pics/rating_icons/ic_rating_s@2x.png);
+	background-repeat: no-repeat;
+	background-size: cover;  
+	margin-right: 10rpx;
+}
+.rating{
+	font-size: 24rpx;
+	color: #bbb;
+}
+.rank10{
+	background-position-y: 0rpx;
+} 
+.rank9{
+	background-position-y: -20rpx;
+} 
+.rank8{
+	background-position-y: -40rpx;
+} 
+.rank7{
+	background-position-y: -60rpx;
+} 
+.rank6{
+	background-position-y: -80rpx;
+} 
+.rank5{
+	background-position-y: -100rpx;
+} 
+.rank4{
+	background-position-y: -120rpx;
+} 
+.rank3{
+	background-position-y: -140rpx;
+} 
+.rank2{
+	background-position-y: -160rpx;
+} 
+.rank1{
+	background-position-y: -180rpx;
+} 
+.rank0{
+	background-position-y: -200rpx;
+} 

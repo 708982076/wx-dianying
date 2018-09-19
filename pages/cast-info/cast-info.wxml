@@ -1,0 +1,24 @@
+<!--pages/cast-info/cast-info.wxml-->
+<import src="/pages/cast-info-part/cast-info-part"/>
+<import src="/pages/movie-list/movie-list"/>
+<view class='movie-wrap'>
+	<view class='movie-img-wrap'>
+		<image src="{{cast.avatars.medium}}" class='movie-img'></image>
+	</view>
+	<view class='info-wrap'>
+		<template is="cast-info-part" data="{{...cast}}"></template>
+		<view class='movie-intro'>
+			<text class='movie-head'>简介</text>
+			<view class='intro-text {{showIntro ? "onFold" : "offFold"}}'><text space="emsp">  巨石强森饰演的灵长类动物学家一直与人类保持距离, 却跟极为聪明的银背大猩猩乔治有着深厚的感情。但是一次基因实验出错, 让这只温驯的大猩猩变成狂怒难驯的庞然巨兽。更可怕的是, 其他动物也发生了同样基因异变。他必须阻止这场全球性的灾难, 更重要是要拯救他的好友乔治。</text></view>
+			<text class='intro-unfold' bindtap='openFold'>展示</text>
+		</view>
+		<view class='movie-intro'>
+			<text class='movie-head'>代表作品</text>
+			<scroll-view scroll-x class='scroll-model'>
+				<block wx:for="{{cast.works}}" wx:key="cast.works">
+					<template is="movie-list" data="{{...item.subject}}"></template> 
+				</block>
+			</scroll-view>
+		</view>
+	</view>
+</view>

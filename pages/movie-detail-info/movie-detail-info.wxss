@@ -1,0 +1,62 @@
+/* pages/movie-detail-info/movie-detail-info.wxss */
+@import '/pages/rating-only-star/rating-only-star.wxss';
+.movie-detail{
+	display: flex;
+}
+.detail-text{
+	width: 70vw;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.detail-title{
+	margin-bottom: 10rpx;	
+	font-size: 38rpx;
+	font-weight: 600;
+}
+.detail-genre, .detail-oldName, .detail-nation{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-size: 24rpx;
+	color: #aaa;
+}
+.detail-rating-wrap{
+	align-self: center;
+}
+.detail-rating{
+	padding: 8rpx 5rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	width: 120rpx;
+	height: 110rpx;
+	border-radius: 10rpx;
+	border: 1rpx solid rosybrown;
+}
+.rating-num{
+	font-size: 38rpx;
+	font-weight: 600;
+	text-align: center;
+}
+.count{
+	font-size: 24rpx;
+	text-align: center;
+}
+.btns-wrap{
+	margin: 50rpx 0; 
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	color: orange;
+}
+.seenBtn, .wishBtn{
+	width: 180rpx;
+	height: 60rpx;
+	line-height: 60rpx;
+	border-radius: 10rpx;
+	border: 1px solid orange;
+	font-size: 28rpx;
+}

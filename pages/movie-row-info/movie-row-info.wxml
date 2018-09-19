@@ -1,0 +1,23 @@
+<!--pages/movie-row-info/movie-row-info.wxml-->
+<import src="/pages/rating-star/rating-star.wxml"/>
+<template name="movie-row-info">
+	<view class='movie-row' data-id="{{id}}" bindtap='toMovieDetail'>
+		<view class='movie-row-imgWrap'>
+			<image src="{{images.medium}}" class='movie-row-img'></image>
+		</view>
+		<view class='movie-info'>
+			<text class='movie-row-title'>{{title}}</text>
+			<text class='movie-row-directors'>导演: {{directors}}</text>
+			<text class='movie-row-casts'>主演: {{casts}}</text>
+			<text class='movie-row-genres'>类型: {{genres}}</text>
+			<template is="rating-star" data="{{...rating}}"></template>
+			<text class='collect-count'>{{collect_count}}人想看</text>
+		</view>
+		<block wx:if="{{typeId === 'theaters'}}">
+			<text class='btn'>购票</text>
+		</block>
+		<block wx:if="{{typeId === 'comingsoon'}}">
+			<text class='btn'>想看</text>
+		</block>
+	</view>
+</template>

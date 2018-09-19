@@ -1,0 +1,23 @@
+/* pages/movie-list/movie-list.wxss */
+.list-wrap{
+	display: inline-block;
+	padding: 20rpx; 
+}
+.item-content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.item-img{
+	width: 200rpx;
+	height: 300rpx;
+	margin-bottom: 10rpx; 
+}
+.movie-name{
+	font-size: 28rpx;
+	font-weight: 600;
+}
+.collect-count{
+	font-size: 24rpx;
+	color: #bbb;
+}

@@ -1,0 +1,31 @@
+/* pages/more-movie/more-movie.wxss */
+@import '/pages/movie-row-info/movie-row-info.wxss';
+.header-tap{
+	position: fixed;
+	top: 0;
+	left: 0; 
+	z-index: 1;
+	width: 100%;
+	display: flex;
+	height: 80rpx;
+	line-height: 80rpx;
+	text-align: center;
+	background-color: #fff;
+	font-size: 34rpx; 
+}
+.theaters-list,.coming-list{
+	flex-grow: 1;
+	border-bottom: 5rpx solid #fff;
+}
+.showUnderline{
+	border-color: green;
+}
+.hideUnderline{
+	border-color: #fff;
+}
+.scroll-wrap{
+	height: 100vh;
+	padding: 80rpx 20rpx 0;
+	box-sizing: border-box;
+	background-color: #fff; 
+}

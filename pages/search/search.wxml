@@ -1,0 +1,16 @@
+<view class='search-header' bindtap='searchHref'>
+    <icon type="search" size='16' class='search-icon'></icon>
+    <input class="search-input" placeholder='电影搜索' bindinput='searchMovie'/>
+    <text class='search-cancel' bindtap='backIndex'>取消</text>
+</view>
+<view class='movie-list'> 
+	<block wx:for="{{resList}}" wx:key="resList">
+		<view class='movie-item' data-id="{{item.id}}" bindtap='toMovieDetail'>
+			<view class='img-wrapper'><image src='{{item.image}}' class='movie-img'></image></view>
+			<view class='desc-wrapper'>
+				<text class='movie-name'>{{item.name}}</text>
+				<text class='movie-desc'>{{item.desc}}</text>
+			</view>
+		</view>
+	</block>
+</view>

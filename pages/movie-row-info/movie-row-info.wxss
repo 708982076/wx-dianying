@@ -1,0 +1,50 @@
+/* pages/movie-row-info/movie-row-info.wxss */
+@import '/pages/rating-star/rating-star.wxss';
+.movie-row{
+	display: flex;
+	padding: 20rpx 0;
+}
+ .movie-row-imgWrap{
+	width: 200rpx;
+	height: 300rpx;
+	margin-right: 20rpx; 
+} 
+.movie-row-img{
+	width: 200rpx;
+	height: 300rpx;
+}
+.movie-info{
+	width: 45vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.movie-row-title{
+	font-size: 34rpx;
+	font-weight: 600;
+}
+.movie-row-directors,
+.movie-row-casts,
+.movie-row-genres,
+.collect-count{
+	font-size: 28rpx;
+	color: #bbb;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.collect-count{
+	color: #0ae;
+}
+.btn{
+	margin-left: 30rpx;
+	width: 80rpx;
+	height: 50rpx;
+	align-self: center;
+	text-align: center;
+	line-height: 50rpx;
+	font-size: 28rpx;
+	color: rosybrown;
+	border: 1rpx solid rosybrown;
+	border-radius: 6px;
+}

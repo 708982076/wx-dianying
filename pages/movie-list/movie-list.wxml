@@ -1,0 +1,12 @@
+<!--pages/movie-list/movie-list.wxml-->
+<import src="/pages/rating-star/rating-star.wxml"/>
+<template name="movie-list">
+	<view class='list-wrap' data-id='{{id}}' bindtap='toMovieDetail'>
+		<view class='item-content'>
+			<image src="{{images.medium}}" class='item-img'></image>
+			<text class='movie-name'>{{title}}</text>
+			<template is="rating-star" data="{{...rating}}"></template>
+			<text class='collect-count'>{{collect_count}}人想看</text>
+		</view>
+	</view>
+</template>

@@ -1,0 +1,22 @@
+{
+  "pages":[
+	"pages/index/index",
+	"pages/cast-info/cast-info",
+	"pages/cast-info-part/cast-info-part",
+	"pages/movie-detail/movie-detail",
+	"pages/rating-only-star/rating-only-star",
+	"pages/movie-detail-info/movie-detail-info",
+	"pages/more-movie/more-movie",
+	"pages/movie-row-info/movie-row-info",
+    "pages/search/search",
+	"pages/movie-list/movie-list",
+	"pages/rating-star/rating-star",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#00f",
+    "navigationBarTitleText": "豆瓣电影",
+    "navigationBarTextStyle":"#fff"
+  }
+}

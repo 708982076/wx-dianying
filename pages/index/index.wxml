@@ -1,0 +1,29 @@
+<import src="/pages/movie-list/movie-list.wxml"/>
+<view class='wrapper'>
+	<view class='search-header' bindtap='searchHref'>
+		<icon type="search" size='16' class='search-icon'></icon>
+		<text class='search-title'>电影搜索</text>
+	</view>
+	<view class='movie-block'>
+		<view class='movie-header'>
+			<text class='header-title'>影院热映</text>
+			<text class='header-more' bind:tap="toMoreMovie" data-type-id='theaters'>更多></text>
+		</view>
+		<scroll-view scroll-x class='scroll-model'>
+			<block wx:for="{{inTheaters}}" wx:key="inTheaters">
+				 <template is="movie-list" data="{{...item}}"></template> 
+			</block>
+		</scroll-view>
+	</view>
+	<view class='movie-block'>
+		<view class='movie-header'>
+			<text class='header-title'>即将上映</text>
+			<text class='header-more' bind:tap="toMoreMovie" data-type-id='comingsoon'>更多></text>
+		</view>
+		<scroll-view scroll-x class='scroll-model'>
+			<block wx:for="{{comingSoon}}" wx:key="comingSoon">
+				 <template is="movie-list" data="{{...item}}"></template> 
+			</block>
+		</scroll-view>
+	</view>
+</view>

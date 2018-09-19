@@ -1,0 +1,23 @@
+<!--pages/movie-detail-info/movie-detail-info.wxml-->
+<import src="/pages/rating-only-star/rating-only-star.wxml"/>
+<template name="movie-detail-info">
+	<view class='movie-detail'>
+		<view class='detail-text'>
+			<text class='detail-title'>{{title}}</text>
+			<text class='detail-genre'>{{desc}}</text>
+			<text class='detail-oldName'>原名： {{aka}}</text>
+			<text class='detail-nation'>国家： {{countries}}</text>
+		</view>
+		<view class='detail-rating-wrap'>
+			<view class='detail-rating'>
+				<text class='rating-num'>{{rating.average}}</text>
+				<template is="rating-only-star" data="{{...rating}}"></template>
+				<text class='count'>{{ratings_count}}人</text>
+			</view>
+		</view>
+	</view>
+	<view class='btns-wrap'>
+		<text class='wishBtn'>想看</text>
+		<text class='seenBtn'>看过</text>
+	</view>
+</template>

@@ -1,0 +1,24 @@
+@import '/pages/movie-list/movie-list.wxss';
+@import '/pages/rating-star/rating-star.wxss';
+.movie-block{
+	background-color: #fff; 
+	margin: 20rpx 0;
+}
+.movie-header{
+	height: 35rpx;
+	padding: 35rpx 30rpx;
+	text-align: right;
+}
+.header-title{
+	font-size: 34rpx;
+	color: #555;
+	float: left;
+}
+.header-more{
+	font-size: 28rpx;
+	color: green;
+}
+.scroll-model{
+	width: 100%;
+	white-space: nowrap;
+}

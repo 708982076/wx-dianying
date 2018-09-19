@@ -1,0 +1,50 @@
+/* pages/cast-info/cast-info.wxss */
+@import '/pages/cast-info-part/cast-info-part.wxss';
+@import '/pages/movie-list/movie-list.wxss';
+@import '/pages/rating-star/rating-star.wxss';
+.movie-wrap{
+	padding-top: 80rpx; 
+}
+.movie-img-wrap{
+	position: relative;
+	margin: 0 auto;
+	width: 300rpx;
+	height: 300rpx;
+}
+.movie-img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.info-wrap{
+	margin-top: 50rpx;
+	padding: 50rpx 30rpx 0; 
+	background-color: #fff; 
+}
+.movie-intro{
+	margin-top: 50rpx;
+}
+.movie-head{
+	font-size: 34rpx;
+	color: #aaa;
+	margin-top: 5rpx;
+}
+.intro-text{
+	font-size: 28rpx;
+}
+.onFold{
+	height: auto;
+	overflow: visible;
+}
+.offFold{
+	height: 120rpx;
+	overflow: hidden;
+}
+.intro-unfold{
+	font-size: 24rpx;
+	color: green;
+}
+.scroll-model{
+	width: 100%;
+	white-space: nowrap;
+}
